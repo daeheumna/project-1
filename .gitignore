@@ -2,7 +2,7 @@ node_modules
 **/.DS_Store
 *.pdf
 *.zip
-delicious-blog.png
-delicious-contact.png
-delicious-home.png
-styleguide-delicious.png
+*delicious-blog.png
+*delicious-contact.png
+*delicious-home.png
+*styleguide-delicious.png
