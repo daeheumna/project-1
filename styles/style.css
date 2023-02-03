@@ -225,3 +225,179 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* FOOTER */
+footer {
+  background-color: #333333;
+  font-family: "Lora", serif;
+  color: #f6f6f6;
+}
+
+.footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  padding: 100px 0;
+  padding-left: 80px;
+}
+
+footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer section div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32%;
+}
+
+footer h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.contactUs ul {
+  width: 60%;
+}
+
+footer li {
+  margin: 20px 0;
+}
+
+footer li,
+footer p,
+footer a {
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
+}
+
+.footerNote {
+  margin-top: 30px;
+}
+
+.contactUs li {
+  border-bottom: 1px solid white;
+  padding-bottom: 13px;
+}
+
+.recentPosts li {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.contactUs .lastList,
+.recentPosts .lastList {
+  border: none;
+  padding-bottom: 0;
+}
+
+.recentPosts ul {
+  width: 60%;
+}
+
+.subNow p {
+  width: 65%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+button[type=submit] {
+  display: inline-block;
+}
+
+.emailSub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .socials {
+  padding-top: 30px;
+}
+
+footer .socials a {
+  margin-right: 10px;
+}
+
+.copyrightColor {
+  background-color: #2E2E2E;
+}
+
+.copyright {
+  font-size: 0.3rem;
+  padding-left: 80px;
+}
+
+.green {
+  color: #64A604;
+}
+
+/* Global Styles */
+html {
+  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 125%;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+figure {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+  color: #FFF;
+}
+
+/* TYPOGRAPHY Styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.line {
+  display: block;
+}
