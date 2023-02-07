@@ -349,10 +349,56 @@ footer .socials a {
   color: #64A604;
 }
 
+/* HEADER */
+header {
+  background-image: url(../assets/home-1.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .wrapper {
+  margin: 0 auto;
+  width: 95%;
+}
+header .navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+header .flexItems {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+header .menuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header h1 {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+  font-size: 46px;
+}
+header a {
+  color: #2E2E2E;
+  font-size: 0.75rem;
+}
+
 /* Global Styles */
 html {
-  font-family: "Lora", serif;
-  font-family: "Raleway", sans-serif;
   font-size: 125%;
 }
 
@@ -387,6 +433,11 @@ figure {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .fa-facebook,
 .fa-instagram,
 .fa-twitter {
@@ -396,8 +447,161 @@ figure {
 /* TYPOGRAPHY Styles */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
 }
 
-.line {
+.nextLine {
   display: block;
+}
+
+.green {
+  color: #64A604;
+}
+
+body,
+button,
+section li {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-size: 14px;
+}
+
+section h1,
+section h2,
+section h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.popularRecipes .bodyFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popularRecipes .homeTextOne {
+  width: 50%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 150px;
+}
+.popularRecipes .homeTextOne h2 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #64A604;
+}
+.popularRecipes .homeTextOne p {
+  margin-top: 20px;
+}
+.popularRecipes .homeTextOne button {
+  background-color: #64A604;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  font-size: 0.7rem;
+  margin-top: 20px;
+}
+.popularRecipes .imageContainer {
+  width: 50%;
+}
+
+.meals .bodyFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.meals .imageContainer {
+  width: 50%;
+}
+.meals ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.meals ul li {
+  width: 40%;
+  padding: 30px 10px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 200px;
+}
+.about .imageContainer {
+  width: 35%;
+  padding-bottom: 50px;
+  position: relative;
+}
+.about .circleText {
+  width: 30%;
+  position: absolute;
+  top: -27%;
+  left: 85%;
+}
+.about .aboutUs {
+  width: 50%;
+  margin-bottom: 100px;
+}
+.about .aboutUs h2 {
+  margin-bottom: 50px;
+}
+
+.homeGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.homeGallery ul li {
+  width: 33.3333333333%;
+}
+
+.testimonals {
+  background-color: #DDED9A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10% 30%;
+}
+.testimonals p {
+  margin-top: 30px;
 }

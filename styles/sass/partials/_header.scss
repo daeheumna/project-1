@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+
+/* HEADER */
+header {
+    background-image: url(../assets/home-1.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+
+    }  
+
+
+    .navFlex {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .flexItems{
+        flex-grow: 1;
+    }
+
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        line-height: 24px;
+        letter-spacing: 1.1px;
+        font-weight: 700;
+        font-size: 46px;
+    }
+
+    a {
+        color: $primaryBlack;
+        font-size: 0.75rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,58 +1,7 @@
 @use "partials/setup";
-@use "partials/section";
+@use "partials/footer";
+@use "partials/header";
+@use "partials/global";
+@use "partials/main";
 
 
-/* Global Styles */
-html {
-    font-family: 'Lora', serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 125%;
-}
-
-body {
-    background-color: #F6F6F6;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-figure {
-    margin: 0;
-}
-
-.wrapper {
-    width: 90%;
-    max-width: 1700px;
-    margin: 0 auto;
-}
-
-.fa-facebook,
-.fa-instagram,
-.fa-twitter {
-    color: #FFF;
-
-}
-
-
-/* TYPOGRAPHY Styles */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-.line {
-    display:block;
-}
