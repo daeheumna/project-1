@@ -13,6 +13,11 @@ header {
         background-image: url(../assets/blog-1.jpeg);
         height: 60vh;
     }
+
+    &.contactPage {
+        background-image: url(../assets/contact-1.jpeg);
+        height: 60vh;
+    }
     
     .navFlex {
         display: flex;

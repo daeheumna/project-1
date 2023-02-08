@@ -224,127 +224,100 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} /* FOOTER */
+}
+
+/* FOOTER */
 footer {
   background-color: #333333;
+  color: #F6F6F6;
   font-family: "Lora", serif;
-  color: #f6f6f6;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  font-size: 0.65rem;
 }
-
-.footer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: left;
-  padding: 100px 0;
-  padding-left: 80px;
-}
-
 footer section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
 }
-
-footer section div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 32%;
+footer section .ourAddress,
+footer section .recentPosts,
+footer section .subNow {
+  width: 33.3333333333%;
 }
-
-footer h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-
-.contactUs ul {
-  width: 60%;
-}
-
-footer li {
-  margin: 20px 0;
-}
-
-footer li,
-footer p,
-footer a {
-  font-size: 0.7rem;
-  letter-spacing: 0.3px;
-}
-
-.footerNote {
-  margin-top: 30px;
-}
-
-.contactUs li {
-  border-bottom: 1px solid white;
-  padding-bottom: 13px;
-}
-
-.recentPosts li {
-  border-bottom: 1px solid white;
-  padding-bottom: 10px;
-}
-
-.contactUs .lastList,
-.recentPosts .lastList {
+footer section .ourAddress .lastList,
+footer section .recentPosts .lastList,
+footer section .subNow .lastList {
   border: none;
-  padding-bottom: 0;
 }
-
-.recentPosts ul {
+footer section .ourAddress li {
   width: 60%;
+  padding: 20px 0;
+  border-bottom: 1px solid #999999;
 }
-
-.subNow p {
-  width: 65%;
+footer section .ourAddress .footerNote {
+  padding-top: 33px;
 }
-
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
+footer section .recentPosts h3 {
+  font-size: 1rem;
 }
-
-button[type=submit] {
-  display: inline-block;
+footer section .recentPosts ul {
+  padding-top: 20px;
 }
-
-.emailSub {
+footer section .recentPosts ul li {
+  width: 60%;
+  padding: 14px 0;
+  border-bottom: 1px solid #999999;
+}
+footer section fieldset {
+  width: 70%;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 20px;
+}
+footer section .subNow h3 {
+  font-size: 1rem;
+}
+footer section .subNow p {
+  width: 55%;
+  line-height: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+footer section .subNow .emailSub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
-
-footer .socials {
-  padding-top: 30px;
+footer section .subNow .emailSub input {
+  width: 80%;
+  padding: 15px 10px;
 }
-
-footer .socials a {
-  margin-right: 10px;
+footer section .subNow .emailSub button {
+  width: 20%;
+  background-color: #64A604;
+  border: none;
+  color: #F6F6F6;
 }
-
-.copyrightColor {
+footer section .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+footer .copyrightColor {
   background-color: #2E2E2E;
 }
-
-.copyright {
-  font-size: 0.3rem;
-  padding-left: 80px;
+footer .copyrightColor .copyright {
+  padding: 0;
 }
-
-.green {
-  color: #64A604;
+footer .copyrightColor .copyright p {
+  margin: 0;
 }
 
 /* HEADER */
@@ -356,6 +329,10 @@ header {
 }
 header.blog {
   background-image: url(../assets/blog-1.jpeg);
+  height: 60vh;
+}
+header.contactPage {
+  background-image: url(../assets/contact-1.jpeg);
   height: 60vh;
 }
 header .navFlex {
@@ -412,7 +389,7 @@ img {
 
 a {
   text-decoration: none;
-  font-size: 1rem;
+  color: #F6F6F6;
 }
 
 ul {
@@ -426,7 +403,7 @@ figure {
 }
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   max-width: 1700px;
   margin: 0 auto;
 }
@@ -434,6 +411,12 @@ figure {
 img {
   max-width: 100%;
   display: block;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .fa-facebook,
@@ -609,9 +592,6 @@ section h3 {
   font-style: italic;
 }
 
-.mainBlog .wrapper {
-  width: 80%;
-}
 .mainBlog .blogText {
   padding-top: 200px;
 }

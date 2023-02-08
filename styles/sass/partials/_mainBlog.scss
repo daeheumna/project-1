@@ -2,9 +2,6 @@
 @use "./mixins" as *;
 
 .mainBlog{
-    .wrapper {
-        width: 80%;
-    }
 
     .blogText{
         padding-top: 200px;
@@ -116,6 +113,7 @@
                 display:flex;
                 gap: 30px;
                 position: relative;
+                
             
                 .commentGrow{
                     display: flex;
@@ -128,11 +126,14 @@
                     padding-left: 25px;
                     
                     
+                    
+                    
                     p {
                         margin: 10px 0;
                     }
                 }
 
+                // to make a left pointing arrow for the comment section, pointing to the authors
                 .arrowleft {
                     width: 0; 
                     height: 0; 
