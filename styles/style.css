@@ -224,9 +224,7 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* FOOTER */
+} /* FOOTER */
 footer {
   background-color: #333333;
   font-family: "Lora", serif;
@@ -356,9 +354,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-header .wrapper {
-  margin: 0 auto;
-  width: 95%;
+header.blog {
+  background-image: url(../assets/blog-1.jpeg);
+  height: 60vh;
 }
 header .navFlex {
   display: -webkit-box;
@@ -444,6 +442,11 @@ img {
   color: #FFF;
 }
 
+button:hover,
+button:focus {
+  opacity: 0.7;
+}
+
 /* TYPOGRAPHY Styles */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -478,7 +481,11 @@ section h3 {
   font-weight: 700;
 }
 
-.popularRecipes .bodyFlex {
+.imageContainer {
+  width: 50%;
+}
+
+.bodyFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,6 +493,7 @@ section h3 {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .popularRecipes .homeTextOne {
   width: 50%;
   text-align: center;
@@ -509,21 +517,11 @@ section h3 {
   font-size: 0.7rem;
   margin-top: 20px;
 }
-.popularRecipes .imageContainer {
-  width: 50%;
+.popularRecipes .homeTextOne button:hover,
+.popularRecipes .homeTextOne button:focus {
+  opacity: 0.7;
 }
 
-.meals .bodyFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.meals .imageContainer {
-  width: 50%;
-}
 .meals ul {
   width: 50%;
   display: -webkit-box;
@@ -600,8 +598,181 @@ section h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10% 30%;
+  padding: 10% 20%;
 }
 .testimonals p {
-  margin-top: 30px;
+  margin-top: 40px;
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  font-style: italic;
+}
+
+.mainBlog .wrapper {
+  width: 80%;
+}
+.mainBlog .blogText {
+  padding-top: 200px;
+}
+.mainBlog .blogText .blogDate {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.mainBlog .blogText p {
+  margin-bottom: 20px;
+}
+.mainBlog .blogText .tagsAndSocials {
+  padding: 30px 0;
+  margin: 30px 0;
+  border-top: 2px solid #999999;
+  border-bottom: 2px solid #999999;
+}
+.mainBlog .blogText .tagsAndSocials p {
+  margin: 0;
+}
+.mainBlog .blogText .tagsAndSocials .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.mainBlog .blogText .tagsAndSocials .shareSocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.mainBlog .blogText .tagsAndSocials .shareSocials .fa-facebook,
+.mainBlog .blogText .tagsAndSocials .shareSocials .fa-instagram,
+.mainBlog .blogText .tagsAndSocials .shareSocials .fa-twitter {
+  color: grey;
+}
+.mainBlog .blogText .tagsAndSocials .shareSocials .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.mainBlog .aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #999999;
+}
+.mainBlog .aboutMe img {
+  max-width: 80%;
+}
+.mainBlog .aboutMe .bio {
+  background-color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30px;
+}
+.mainBlog .relatedPosts h4 {
+  padding: 30px 0;
+}
+.mainBlog .relatedPosts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #999999;
+  padding-bottom: 20px;
+}
+.mainBlog .relatedPosts ul li {
+  width: calc(33.3333333333% - 20px);
+  margin: 10px;
+}
+.mainBlog .relatedPosts ul li p {
+  margin: 0;
+}
+.mainBlog .comments h3 {
+  padding: 30px 0;
+}
+.mainBlog .comments .commentBox {
+  margin-bottom: 20px;
+}
+.mainBlog .comments .commentsFlex .firstComment,
+.mainBlog .comments .commentsFlex .secondComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.mainBlog .comments .commentsFlex .firstComment .commentGrow,
+.mainBlog .comments .commentsFlex .secondComment .commentGrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #999999;
+  height: 150px;
+  padding: 10px;
+  padding-left: 25px;
+}
+.mainBlog .comments .commentsFlex .firstComment .commentGrow p,
+.mainBlog .comments .commentsFlex .secondComment .commentGrow p {
+  margin: 10px 0;
+}
+.mainBlog .comments .commentsFlex .firstComment .arrowleft,
+.mainBlog .comments .commentsFlex .secondComment .arrowleft {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #999999;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+}
+.mainBlog .leaveAComment {
+  padding-top: 30px;
+}
+.mainBlog .leaveAComment .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.mainBlog .leaveAComment .userInfo input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 15px 10px;
+}
+.mainBlog .leaveAComment #comments {
+  margin: 20px 0;
+  padding: 15px 10px;
+  width: 100%;
+}
+.mainBlog .leaveAComment button {
+  background-color: #64A604;
+  color: #F6F6F6;
+  border: none;
+  padding: 10px 35px;
+  margin-bottom: 20px;
 }

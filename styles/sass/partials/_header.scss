@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "./mixins" as *;
 
 
 /* HEADER */
@@ -7,14 +8,12 @@ header {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.blog {
+        background-image: url(../assets/blog-1.jpeg);
+        height: 60vh;
+    }
     
-    .wrapper {
-        margin: 0 auto;
-        width: 95%;
-
-    }  
-
-
     .navFlex {
         display: flex;
         justify-content: space-between;

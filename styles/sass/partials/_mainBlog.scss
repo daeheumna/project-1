@@ -1,0 +1,179 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.mainBlog{
+    .wrapper {
+        width: 80%;
+    }
+
+    .blogText{
+        padding-top: 200px;
+
+        .blogDate {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+
+        // Creating a section for the tags & socials. Put them in a div to make shifting their position easier
+        .tagsAndSocials {
+
+            padding: 30px 0;
+            margin: 30px 0;
+            
+            p {
+                margin: 0;
+            }
+
+            border-top: 2px solid $primaryBrownGrey;
+            border-bottom: 2px solid $primaryBrownGrey;
+
+
+            .tags {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .shareSocials {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                
+                .fa-facebook,
+                .fa-instagram,
+                .fa-twitter {
+                    color: grey;
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 10px;
+                }
+
+            }
+        }
+    }
+
+    .aboutMe {
+        display: flex;
+        padding: 0 0;
+        padding-bottom: 30px;
+        border-bottom: 2px solid $primaryBrownGrey;
+
+        img {
+            max-width: 80%;
+        }
+
+        .bio {
+            background-color: $primaryBrownGrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 30px;
+        }
+    }
+
+    .relatedPosts {
+        h4 {
+            padding: 30px 0;
+        }
+
+        ul {
+            display: flex;
+            border-bottom: 2px solid $primaryBrownGrey;
+            padding-bottom: 20px;
+
+            li {
+                width: calc( (100%/3) - 20px );
+                margin: 10px;
+
+                p {
+                    margin:0;
+                }
+
+            }
+        }
+    }
+
+    .comments {
+        h3 {
+            padding: 30px 0;
+        }
+
+        .commentBox {
+            margin-bottom: 20px;
+        }
+
+        .commentsFlex {
+            .firstComment,
+            .secondComment {
+                display:flex;
+                gap: 30px;
+                position: relative;
+            
+                .commentGrow{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-grow:1;
+                    background-color: $primaryBrownGrey;
+                    height: 150px;
+                    padding: 10px;
+                    padding-left: 25px;
+                    
+                    
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+
+                .arrowleft {
+                    width: 0; 
+                    height: 0; 
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-right:10px solid $primaryBrownGrey; 
+                    position: absolute;
+                    left: 6%;
+                    top: 10%;
+                  }
+        }
+        }
+    }
+
+    .leaveAComment {
+        padding-top: 30px;
+
+        .userInfo {
+            display:flex;
+            gap: 20px;
+            
+            input {
+                flex-grow: 1;
+                padding: 15px 10px;
+            }
+        }
+
+        #comments {
+            margin: 20px 0;
+            padding: 15px 10px;
+            width: 100%;
+        }
+
+        button {
+            background-color: $primaryGreen;
+            color: $primaryWhite;
+            border: none;
+            padding: 10px 35px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+}

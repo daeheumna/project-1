@@ -11,39 +11,214 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
 <body>
-    <header>
-        <h1>Delicious</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">RECEIPES</a></li>
-            <li><a href="">NUTRITION</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">SHOP</a></li>
-            <li><a href="">CONTACT</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-    </nav>
-</body>
-    <section class="blog">
+    <header class="blog" id="blog">
         <div class="wrapper">
-            <h2>PINAEPPLE CHICKEN</h2>
-            <P>Posted at July 11 2018 | by Admin | in Recipes</P>
+            <!-- NAV -->
+            <nav class="navFlex">
+                <div class="flexItems">
+                    <h1>Delicious</h1>
+                </div>
+
+                    <ul class="menuFlex flexItems">
+                        <li><a class="green" href="">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="">RECEIPES</a></li>
+                        <li><a href="">NUTRITION</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">SHOP</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+            </nav>
+
         </div>
-    <article>
+    </header>
+    <main class="mainBlog">
+        <div class="wrapper">
+            <section class="blogText">
+                
+                <div>
+                    <h2>PINAEPPLE CHICKEN</h2>
+                    <p class="blogDate">Posted at July 11 2018 | by Admin | in Recipes</P>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusamus non iste suscipit ipsa odio. Mollitia inventore eum voluptate atque!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nesciunt?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit rem possimus corporis beatae repellendus eveniet ea asperiores enim earum architecto.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dicta vero debitis asperiores eligendi dolores, amet obcaecati voluptatem facilis adipisci facere earum voluptatibus perspiciatis repudiandae quam animi fugiat necessitatibus maxime laboriosam. Officia amet dolorum sint quas, corrupti sit dicta minus esse deleniti dolore praesentium deserunt iure nisi facere? Rem, architecto?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sed nostrum fugiat a possimus doloremque, placeat, ad sunt mollitia quo officiis eos delectus quis! Blanditiis natus alias error nisi quidem!</p>
+                </div>
 
-        </article>
-    </section>
+                <div class="tagsAndSocials">
+                    <div class="tags">
+                        <p>TAGS:</p>
+                        <p>Recipes, Chicken, Pineaaple, Mexican</p>
+                    </div>
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+                    <div class="shareSocials">
+                        <p>SHARE:</p>
+                        <div class="socials">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="aboutMe">
+                <figure class="imageContainer">
+                    <img src="./assets/blog-2.jpeg" alt="image of author">
+                </figure>
+                <div class="bio">
+                    <h4>SALLY LUCAS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi dolores excepturi placeat, voluptate blanditiis. Asperiores eveniet suscipit vero provident, magni perferendis animi impedit cum sed aspernatur rerum molestias, excepturi minus accusamus officia optio doloremque? Quibusdam eum eaque consequatur error dolorem sequi tempore minus illum dolor labore quaerat, accusamus perferendis?</p>
+                </div>
+            </section>
+
+            <section class="relatedPosts">
+                <h4>RELATED POSTS</h3>
+                <div class="cardContainer">
+                    <ul>
+                        <li>
+                            <img src="./assets/blog-3.jpeg" alt="woman holding pink cake">
+                            <h3><a>HOW TO BAKE THE PERFECT CAKE</a></h3>
+                            <p>July 11, 2018 | by Admin | in Recipes</p>
+                        </li>
+                        <li>
+                            <img src="./assets/blog-4.jpeg" alt="three floral cupcakes">
+                            <h3><a>FLORAL CUPCAKES</a></h3>
+                            <p>July 19, 2018 | by Admin | in Recipes</p>
+                        </li>
+                        <li>
+                            <img src="./assets/blog-5.jpeg" alt="person garnishing salad on smoked salmon">
+                            <h3><a>SINGLE POST WITH IMAGE</a></h3>
+                            <P>July 22, 2018 | by Admin | in Recipes</P>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="comments">
+                <h3>02 COMMENTS</h3>
+                
+                <div class="commentsFlex">
+                    <div class="commentBox">
+                        <ul class="firstComment">
+                            <li><img src="./assets/blog-6.jpeg" alt="customer profile picture"></li>
+                            <div class="commentGrow">
+                                <li>
+                                    <h4>Lucatony Avaro - Web Developer</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem vel, provident quae fugiat qui eligendi totam explicabo voluptatum incidunt ea quis, in, culpa reiciendis.</p>
+                                    <p>Jul 7th, 2015 at 15 hours ago</p>
+                                </li>
+                            </div>
+
+                            <div class="arrowleft"></div>
+                        </ul>
+                    </div>
+
+                    <ul class="secondComment">
+                        <li><img src="./assets/blog-7.jpeg" alt="second customer profile picture with a hat"></li>
+                        
+                        <div class="commentGrow">
+                            <li>
+                                <h4>Brian Hudson - Web Developer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum libero officia quis distinctio eveniet dolor, repellendus odit aut, quisquam autem perferendis atque unde facere quas.</p>
+                                <p>Jul 17, 2015 at hours ago</p>
+                            </li>
+                        </div>
+
+                        <div class="arrowleft"></div>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="leaveAComment">
+                <h4>LEAVE A COMMENT</h4>
+                <p>Your email address will not be published. Required fileds are marked *</p>
+
+                <form action="#" method="post" name="commentForm">
+                    <fieldset class="userInfo">
+
+                        <lable for="userName" class="sr-only">Name</lable>
+                        <input type="text" placeholder="Name *" id="userName" required>
+
+                        <lable for="email" class="sr-only">Email</lable>
+                        <input type="email" placeholder="Email *" id="email" required>
+
+                        <lable for="website" class="sr-only">Website</lable>
+                        <input type="text" placeholder="Your Website" id="website">
+                    </fieldset>
+                
+                    <fieldset>
+                        <label for="comments"></label>
+                        <textarea name="comments" id="comments" placeholder="Comments" cols="250" rows="10" minlength="5" maxlength="200"></textarea>
+                    </fieldset>
+
+                        <button type="submit"> Submit Comment</button>
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <section class="footer">
+                    <div class="contactUs">
+                        <h2 class="green">DELICIOUS</h2>
+                        <ul>
+                            <li class="footerNote">Soko radicchio bunya nuts gram dulse <br></br>silver beet parsnip napa cabbage lotus <br></br>root sea lettuce brussels sprout cabbage.</li>
+                            <li>A delicious restaurant <span class="nextLine">Toronto, Ontario</span></li>
+                            <li>yum@food.com</li>
+                            <li class="lastList">+1 234 567 8910</li>
+                        </ul>
+                    </div>
+                    <div class="recentPosts">
+                        <h3>RECENT POSTS</h3>
+                            <ul>
+                                <li><a>Beetroot water spinach okra water</a></li>
+                                <li><a>Chestnut ricebean pea catsear courgette</a></li>
+                                <li><a>Summer purslane spinach arugula pea</a></li>
+                                <li><a>Tatsoi aubergine spring onion bush</a></li>
+                                <li><a>Tomato kale radicchio turnip chicory</a></li>
+                                <li class="lastList"><a>Salsify pea sprouts fava bean</a></li>
+                            </ul>
+                    </div>
+                    <div class="subNow">
+                        <h3>SUBSCRIBE NOW</h3>
+                        <form action="#" method="post" name="singUpForm">
+                                    
+                            <fieldset>
+                                <p>Get all of our newest recipes immediately in your inbox!</p>
+                                <div class="emailSub">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" placeholder="email address" id="email">
+    
+                                    <button type="submit" class="fa fa-arrow-right"></button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="socials">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="copyrightColor">
+                <div class="wrapper">
+                    <section class="copyright">
+                            <p>Copyrights ©️ 2015 by <a href="" class="green">POLAR.</a> All Rights Reserved</p>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
 </html>
