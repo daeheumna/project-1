@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
@@ -23,19 +24,127 @@
                 </div>
 
                     <ul class="menuFlex flexItems">
-                        <li><a class="green" href="">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="">RECEIPES</a></li>
+                        <li><a class="green" href="./index.html">HOME</a></li>
+                        <li><a href="./index.html#about">ABOUT</a></li>
+                        <li><a href="./index.html#recipes">RECEIPES</a></li>
                         <li><a href="">NUTRITION</a></li>
-                        <li><a href="">BLOG</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
                         <li><a href="">SHOP</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href=""><i class="fa fa-search"></i></a></li>
                     </ul>
-            </nav>
-
+                </nav>
         </div>
     </header>
+
+    <main>
+            <section class="mainContactUs">
+                <div class="emailUs">
+                    <h2>DROP US A LINE</h2>
+
+                    <form action="#" method="post" name="commentForm">
+                        <fieldset class="userInfo">
+    
+                            <lable for="userName" class="sr-only">Name</lable>
+                            <input type="text" placeholder="Your Name" id="userName" required>
+    
+                            <lable for="email" class="sr-only">Email</lable>
+                            <input type="email" placeholder="Your Email" id="email" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <lable for="subject" class="sr-only">Subject</lable>
+                            <input type="text" placeholder="Subject" id="subject">
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder="Message" cols="100" rows="10" minlength="5" maxlength="200"></textarea>
+                        </fieldset>
+
+                        <button><a href="">SEND MESSAGE</a></button>
+                        <a class="fa fa-long-arrow-right" href="#"></a>
+                    </form>
+                </div>
+
+                <div class="contactDetails">
+                    <div>
+                        <h2>CONTACT DETAILS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, molestias sunt qui odio aut quod enim aperiam facilis amet. Dolore optio neque tenetur nesciunt odio labore sunt maxime magni quia.</p>
+
+                        <h3>WORKING HOURS</h3>
+                        <p><span class="bold">MON - FRI:</span> 08:00am - 5:30pm</p>
+                        <p><em>Not working on Saturday and Sunday</em></p>
+
+                        <h3>CONTACT INFO</h3>
+                        <ul>
+                            <li>A delicious restaurant <span class="nextLine">Toronto, Ontario</span></li>
+                            <li>yum@food.com</li>
+                            <li class="ourNumber">+1 234 567 8910</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+            <section class="sectionBreak"></section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <section>
+                <div class="ourAddress">
+                    <h2 class="green">DELICIOUS</h2>
+                    <ul>
+                        <li class="footerNote">Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</li>
+                        <li>A delicious restaurant <span class="nextLine">Toronto, Ontario</span></li>
+                        <li>yum@food.com</li>
+                        <li class="lastList">+1 234 567 8910</li>
+                    </ul>
+                </div>
+                <div class="recentPosts">
+                    <h3>RECENT POSTS</h3>
+                        <ul>
+                            <li><a href="">Beetroot water spinach okra water</a></li>
+                            <li><a href="">Chestnut ricebean pea catsear courgette</a></li>
+                            <li><a href="">Summer purslane spinach arugula pea</a></li>
+                            <li><a href="">Tatsoi aubergine spring onion bush</a></li>
+                            <li><a href="">Tomato kale radicchio turnip chicory</a></li>
+                            <li class="lastList"><a href="">Salsify pea sprouts fava bean</a></li>
+                        </ul>
+                </div>
+                <div class="subNow">
+                    <h3>SUBSCRIBE NOW</h3>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+    
+                    <form action="#" method="post" name="singUpForm">
+                        <fieldset>
+                            <div class="emailSub">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" placeholder="email address" id="email">
+    
+                                <button type="submit" class="fa fa-long-arrow-right"></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    
+                    <div class="socials">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="copyrightColor">
+            <div class="wrapper">
+                <section class="copyright">
+                        <p>Copyrights ©️ 2015 by <a href="" class="green">POLAR.</a> All Rights Reserved</p>
+                </section>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

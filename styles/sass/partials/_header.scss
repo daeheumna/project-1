@@ -33,6 +33,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 20%;
     }
 
     h1 {
@@ -46,6 +47,7 @@ header {
     a {
         color: $primaryBlack;
         font-size: 0.75rem;
+        font-weight: 700;
     }
 
 }

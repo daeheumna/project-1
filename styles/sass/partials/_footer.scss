@@ -33,7 +33,7 @@ footer {
             li{
                 width: 60%;
                 padding: 20px 0;
-                border-bottom: 1px solid $primaryBrownGrey;
+                border-bottom: 2px solid rgb(104,104,104, 0.5); //I am aware that this is the color palette given; however this rgb with the level of opacity was more alike the original design 
             }
 
             .footerNote {
@@ -55,7 +55,7 @@ footer {
 
                     width: 60%;
                     padding: 14px 0;
-                    border-bottom: 1px solid $primaryBrownGrey;
+                    border-bottom: 2px solid rgb(104,104,104, 0.5);
 
                   
                 }
@@ -63,8 +63,8 @@ footer {
         }
 
         fieldset {
-            width: 70%;
-            border-bottom: 1px solid $primaryBrownGrey;
+            width: 80%;
+            border-bottom: 2px solid rgb(104,104,104, 0.5);
             padding-bottom: 20px;
         }
 
@@ -74,10 +74,10 @@ footer {
             }
 
             p {
-                width: 55%;
+                width: 80%;
                 line-height: 20px;
                 padding-top: 40px;
-                padding-bottom: 20px;
+                padding-bottom: 35px;
             }
 
             .emailSub {
@@ -119,113 +119,3 @@ footer {
     }
 
 }
-
-
-
-
-
-// footer {
-//     background-color: #333333;
-//     font-family: 'Lora', serif;
-//     color: #f6f6f6;
-// }
-
-// .footer {
-//     justify-content: space-between;
-//     text-align: left;
-//     padding: 100px 0;
-//     padding-left: 80px;
-// }
-
-// footer section {
-//     display: flex;
-//     align-content: center;
-// }
-
-
-// footer section div {
-//     flex-direction: column;
-//     width: 32%;
-// }
-
-// footer h2 {
-//     font-family: 'Raleway', sans-serif;
-//     font-weight: 700;
-//     line-height: 24px;
-//     letter-spacing: 0.5px;
-// }
-
-// .ourAdress ul {
-//     width: 60%;
-// }
-
-// footer li {
-//     margin: 20px 0;
-// }
-
-// footer li,
-// footer p,
-// footer a {
-//     font-size: 0.7rem;
-//     letter-spacing: 0.3px;
-// }
-
-// .footerNote {
-//     margin-top: 30px ;
-
-// }
-
-// .ourAddress li {
-//     border-bottom: 1px solid white;
-//     padding-bottom: 13px;
-// }
-
-// .recentPosts li {
-//     border-bottom: 1px solid white;
-//     padding-bottom: 10px;
-// }
-
-// .ourAddress .lastList,
-// .recentPosts .lastList {
-//     border: none;
-//     padding-bottom: 0;
-// }
-
-// .recentPosts ul {
-//     width: 60%;
-// }
-
-// .subNow p {
-//     width: 65%;
-// }
-
-
-
-// button[type=submit] {
-//     display: inline-block;
-// }
-
-// .emailSub {
-//     display: flex;
-//     flex-direction: row;
-// }
-
-// footer .socials {
-//     padding-top: 30px;
-    
-// }
-
-// footer .socials a {
-//     margin-right: 10px;
-// }
-
-// .copyrightColor {
-//     background-color: #2E2E2E;
-// }
-
-// .copyright {
-//     font-size: 0.3rem;
-//     padding-left: 80px;
-// }
-
-

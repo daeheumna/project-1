@@ -1,2 +1,101 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.mainContactUs {
+    display: flex;
+
+    .emailUs {
+        width: 60%;
+        padding-left: 10%;;
+        padding-right: 30px;
+
+        h2 {
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+
+        .userInfo {
+            gap: 20px;
+        }
+
+        fieldset{
+            display: flex;
+
+            input{
+                flex-grow:1;
+                padding: 15px 15px;
+                margin-bottom: 20px;
+                border: none;
+                background-color: $primaryLightGrey;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 15px 15px;
+                border: none;
+                background-color: $primaryLightGrey;
+            }
+        }
+
+        button {
+            margin: 20px 0;
+            background-color: $primaryWhite;
+            border: none;
+
+            a {
+
+                color: $primaryGreen
+            }
+        }
+
+        .fa-long-arrow-right {
+            color: $primaryGreen;
+        }
+    }
+
+    .contactDetails {
+        width: 40%;
+        padding-left: 30px;
+        background-color: $primaryLightGrey;
+        
+        li,
+        p {
+            color: $primaryBrownGrey;
+        }
+
+
+        div{
+            width: 50%;
+        }
+        h2 {
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+
+        h3 {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        li {
+            padding-bottom: 20px;
+        }
+
+        .ourNumber {
+            padding-bottom: 50px;
+        }
+
+        .bold {
+            font-weight: 700;
+            color: $primaryBlack;
+        }
+    }
+}
+
+
+.sectionBreak {
+    background-image: url(../assets/contact-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
