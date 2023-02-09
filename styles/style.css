@@ -236,6 +236,11 @@ footer {
   letter-spacing: 0.3px;
   font-size: 0.65rem;
 }
+footer p,
+footer li,
+footer a {
+  color: #999999;
+}
 footer section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +269,11 @@ footer section .ourAddress .footerNote {
   padding-top: 33px;
 }
 footer section .recentPosts h3 {
-  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  font-size: 0.9rem;
 }
 footer section .recentPosts ul {
   padding-top: 20px;
@@ -280,7 +289,11 @@ footer section fieldset {
   padding-bottom: 20px;
 }
 footer section .subNow h3 {
-  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  font-size: 0.9rem;
 }
 footer section .subNow p {
   width: 80%;
@@ -366,11 +379,15 @@ header h1 {
   line-height: 24px;
   letter-spacing: 1.1px;
   font-weight: 700;
-  font-size: 46px;
+  font-size: 2.3rem;
 }
 header a {
   color: #2E2E2E;
-  font-size: 0.75rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 
@@ -440,6 +457,10 @@ button:focus {
   color: #64A604;
 }
 
+.unbold {
+  font-weight: 400;
+}
+
 /* TYPOGRAPHY Styles */
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -453,17 +474,27 @@ section li {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.3px;
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 
 section h1,
 section h2,
 section h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  line-height: 36px;
-  letter-spacing: 0.5px;
   font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  font-size: 1.5rem;
+}
+
+input,
+button {
+  font-family: "Lora", serif;
+}
+
+input,
+textarea {
+  color: #999999;
 }
 
 .imageContainer {
@@ -508,6 +539,7 @@ section h3 {
 }
 .popularRecipes .homeTextOne p {
   margin-top: 20px;
+  color: #999999;
 }
 .popularRecipes .homeTextOne button {
   background-color: #64A604;
@@ -519,7 +551,7 @@ section h3 {
 }
 
 .meals {
-  background-color: #E8E8E8;
+  background-color: #F0F0F0;
 }
 .meals .menuFlex {
   -webkit-box-pack: space-evenly;
@@ -536,6 +568,15 @@ section h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.meals ul a {
+  color: #2E2E2E;
+}
+.meals ul a h3 {
+  font-size: 1rem;
+}
+.meals ul a p {
+  color: #999999;
 }
 .meals ul li {
   width: 40%;
@@ -599,8 +640,11 @@ section h3 {
 }
 .about .aboutUs .aboutUsHeader .underline {
   border-top: 4px solid #64A604;
-  width: 10%;
+  width: 8%;
   padding-bottom: 30px;
+}
+.about .aboutUs p {
+  color: #999999;
 }
 
 .homeGallery ul {
@@ -642,7 +686,7 @@ section h3 {
 }
 .testimonals .underline {
   border-top: 4px solid #64A604;
-  width: 10%;
+  width: 5%;
   margin-top: 10px;
   padding-bottom: 20px;
 }
@@ -680,10 +724,13 @@ section h3 {
   padding-top: 150px;
 }
 .blogText .blogDate {
-  margin: 0;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
-.blogText p {
+.blogText .mainBlogText {
+  color: #999999;
+}
+.blogText .mainBlogText p {
   margin-bottom: 20px;
 }
 .blogText .tagsAndSocials {
@@ -742,7 +789,7 @@ section h3 {
   width: 300px;
 }
 .aboutMe .imageContainer img {
-  height: 200px;
+  height: 180px;
 }
 .aboutMe .bio {
   background-color: #F0F0F0;
@@ -757,22 +804,29 @@ section h3 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 30px;
-  height: 200px;
+  height: 180px;
   margin-left: 20px;
 }
+.aboutMe .bio h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
 .aboutMe .bio p {
-  margin-top: 25px;
+  margin-top: 10px;
+  color: #999999;
 }
 
 .relatedPosts h4 {
   padding: 30px 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .relatedPosts ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #E8E8E8;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -780,6 +834,9 @@ section h3 {
 .relatedPosts ul li {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+.relatedPosts ul li h3 {
+  margin-top: 15px;
 }
 .relatedPosts ul li a {
   color: #2E2E2E;
@@ -795,6 +852,7 @@ section h3 {
 
 .comments h3 {
   padding: 30px 0;
+  font-size: 0.8rem;
 }
 .comments .commentBox {
   margin-bottom: 20px;
@@ -837,6 +895,11 @@ section h3 {
   padding: 10px;
   padding-left: 25px;
 }
+.comments .commentsFlex .firstComment .commentGrow .commentDate,
+.comments .commentsFlex .secondComment .commentGrow .commentDate {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
 .comments .commentsFlex .firstComment .commentGrow p,
 .comments .commentsFlex .secondComment .commentGrow p {
   margin: 10px 0;
@@ -859,7 +922,10 @@ section h3 {
   margin-top: 15px;
 }
 .leaveAComment p {
+  color: #999999;
+  margin-top: 5px;
   margin-bottom: 20px;
+  font-style: italic;
 }
 .leaveAComment .userInfo {
   display: -webkit-box;
@@ -883,15 +949,23 @@ section h3 {
 .leaveAComment button {
   background-color: #64A604;
   color: #F6F6F6;
+  font-weight: bold;
   border: none;
-  padding: 10px 35px;
-  margin-bottom: 20px;
+  padding: 20px 30px;
+  margin-bottom: 100px;
 }
 
 .mainContactUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mainContactUs h3 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
 }
 .mainContactUs .emailUs {
   width: 60%;
@@ -953,8 +1027,8 @@ section h3 {
   padding-bottom: 40px;
 }
 .mainContactUs .contactDetails h3 {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 .mainContactUs .contactDetails li {
   padding-bottom: 20px;

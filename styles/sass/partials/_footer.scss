@@ -8,8 +8,12 @@ footer {
     color: $primaryWhite;
     @include footerText(0.65rem); // 13px;
 
-    
+    p,
+    li,
+    a {
 
+        color: $primaryBrownGrey;
+    }
 
 
     section {
@@ -45,19 +49,16 @@ footer {
 
         .recentPosts {
             h3 {
-                font-size: 1rem;
+                @include footerHeading(0.9rem);
             }
-
+            
             ul {
                 padding-top: 20px;
 
                 li {
-
                     width: 60%;
                     padding: 14px 0;
                     border-bottom: 2px solid rgb(104,104,104, 0.5);
-
-                  
                 }
             }
         }
@@ -70,7 +71,7 @@ footer {
 
         .subNow {
             h3 {
-                font-size: 1rem;
+                @include footerHeading(0.9rem);
             }
 
             p {
@@ -81,7 +82,6 @@ footer {
             }
 
             .emailSub {
-             
                 display: flex;
 
                 input {
@@ -112,7 +112,6 @@ footer {
             padding: 0;
             p {
                 margin: 0;
-                
             }
         }
 

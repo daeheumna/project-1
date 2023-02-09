@@ -69,6 +69,10 @@ button:focus {
     color: $primaryGreen;
 }
 
+.unbold {
+    font-weight: 400;
+}
+
 
 /* TYPOGRAPHY Styles */
 h1, h2, h3, h4, h5, h6, p, a {
@@ -79,22 +83,22 @@ h1, h2, h3, h4, h5, h6, p, a {
 body,
 button,
 section li {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    font-size: 14px;
+    @include bodyText(0.7rem); //14px;
 
 }
 
 section h1,
 section h2,
 section h3 {
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    line-height: 36px;
-    letter-spacing: 0.5px;
-    font-weight: 700;
+    @include footerHeading(1.5rem); //30px;
 }
 
+input,
+button {
+    font-family: 'Lora', serif;
+}
+
+input,
+textarea {
+    color: $primaryBrownGrey;
+}
