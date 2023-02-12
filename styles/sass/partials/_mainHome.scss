@@ -17,7 +17,7 @@
         width: 50%;
         text-align: center;
         justify-content: center;
-        padding: 0 150px;
+        padding: 8%;
 
         .popularRecipesHeader{
             display: flex;
@@ -60,6 +60,8 @@
 
     .menuFlex{
         justify-content: space-evenly;
+        gap: 50px;
+        padding: 3%;
     }
 
     ul {
@@ -67,6 +69,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        // .menuOne,
+        // .menuTwo,
+        // .menuThree,
+        // .menuFour,
+        // .menuFive,
+        // .menuSix {
+
+        // }
+        
 
         a {
             color: $primaryBlack;
@@ -81,18 +93,17 @@
         }
 
         li {
-            width: 40%;
-            padding: 30px 10px;
+            width: 45%;
             display: flex;
 
             i {
-                padding-top: 10px;
-                margin-right: 10px;
+                padding-top: 15%;
+                margin-right: 8px;
                 min-width: 50px;
             }
 
             .fa-spoon {
-                padding-left: 15px;
+                padding-left: 20%;
             }
 
         }
@@ -196,15 +207,18 @@
 
     .customerQuote {
         display: flex;
+        position: relative;
 
         .fa-quote-left {
-            padding-top: 10px;
-            padding-right: 10px;
+            position: absolute;
+            left: -5%;
         }
 
 
         .fa-quote-right{
-            padding-top: 190px;
+            position: absolute;
+            right: -4%;
+            bottom: -10%;
         }
     }
 

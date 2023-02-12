@@ -261,7 +261,7 @@ footer section .subNow .lastList {
   border: none;
 }
 footer section .ourAddress li {
-  width: 60%;
+  width: 90%;
   padding: 20px 0;
   border-bottom: 2px solid rgba(104, 104, 104, 0.5);
 }
@@ -279,12 +279,12 @@ footer section .recentPosts ul {
   padding-top: 20px;
 }
 footer section .recentPosts ul li {
-  width: 60%;
+  width: 85%;
   padding: 14px 0;
   border-bottom: 2px solid rgba(104, 104, 104, 0.5);
 }
 footer section fieldset {
-  width: 80%;
+  width: 100%;
   border-bottom: 2px solid rgba(104, 104, 104, 0.5);
   padding-bottom: 20px;
 }
@@ -296,7 +296,7 @@ footer section .subNow h3 {
   font-size: 0.9rem;
 }
 footer section .subNow p {
-  width: 80%;
+  width: 100%;
   line-height: 20px;
   padding-top: 40px;
   padding-bottom: 35px;
@@ -390,6 +390,9 @@ header a {
   font-size: 0.7rem;
   font-weight: 700;
 }
+header .hamMenu {
+  display: none;
+}
 
 /* Global Styles */
 html {
@@ -423,7 +426,7 @@ figure {
 
 .wrapper {
   width: 80%;
-  max-width: 1700px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -459,6 +462,10 @@ button:focus {
 
 .unbold {
   font-weight: 400;
+}
+
+textarea {
+  resize: none;
 }
 
 /* TYPOGRAPHY Styles */
@@ -516,7 +523,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 150px;
+  padding: 8%;
 }
 .popularRecipes .homeTextOne .popularRecipesHeader {
   display: -webkit-box;
@@ -557,6 +564,8 @@ textarea {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 50px;
+  padding: 3%;
 }
 .meals ul {
   width: 50%;
@@ -579,19 +588,18 @@ textarea {
   color: #999999;
 }
 .meals ul li {
-  width: 40%;
-  padding: 30px 10px;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .meals ul li i {
-  padding-top: 10px;
-  margin-right: 10px;
+  padding-top: 15%;
+  margin-right: 8px;
   min-width: 50px;
 }
 .meals ul li .fa-spoon {
-  padding-left: 15px;
+  padding-left: 20%;
 }
 
 .about {
@@ -700,13 +708,16 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .testimonals .customerQuote .fa-quote-left {
-  padding-top: 10px;
-  padding-right: 10px;
+  position: absolute;
+  left: -5%;
 }
 .testimonals .customerQuote .fa-quote-right {
-  padding-top: 190px;
+  position: absolute;
+  right: -4%;
+  bottom: -10%;
 }
 .testimonals .leftRight {
   display: -webkit-box;
@@ -789,7 +800,7 @@ textarea {
   width: 300px;
 }
 .aboutMe .imageContainer img {
-  height: 180px;
+  height: 150px;
 }
 .aboutMe .bio {
   background-color: #F0F0F0;
@@ -804,7 +815,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 30px;
-  height: 180px;
+  height: 150px;
   margin-left: 20px;
 }
 .aboutMe .bio h4 {
@@ -969,7 +980,7 @@ textarea {
 }
 .mainContactUs .emailUs {
   width: 60%;
-  padding-left: 10%;
+  padding-left: 13%;
   padding-right: 30px;
 }
 .mainContactUs .emailUs h2 {
@@ -1047,3 +1058,207 @@ textarea {
   background-size: cover;
   height: 60vh;
 }
+
+@media (max-width: 1500px) {
+  header .menuFlex {
+    width: 60%;
+  }
+  .menuFlex {
+    padding: 0 3% !important;
+    gap: 0 !important;
+  }
+  .menuFlex li {
+    padding-bottom: 2% !important;
+  }
+}
+@media (max-width: 1250px) {
+  .homeTextOne {
+    padding: 0% !important;
+  }
+  .homeTextOne h2 {
+    font-size: 1rem !important;
+  }
+  .homeTextOne p {
+    font-size: 0.5rem !important;
+    margin: 20px 10% !important;
+  }
+  .menuFlex .fa-bars {
+    font-size: 2em;
+  }
+  .menuFlex h3 {
+    font-size: 1rem !important;
+  }
+  .menuFlex p {
+    font-size: 0.5rem !important;
+    line-height: 20px !important;
+  }
+  .menuFlex li {
+    padding-bottom: 2% !important;
+  }
+  .bio {
+    padding: 10px 2%;
+    margin: 0;
+  }
+  .bio p {
+    font-size: 0.5rem;
+    line-height: 20px;
+  }
+  footer .recentPosts li {
+    width: 90% !important;
+  }
+}
+@media (max-width: 1000px) {
+  header .menuFlex {
+    display: none;
+  }
+  header .hamMenu {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    display: inline;
+  }
+  .bodyFlexOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 20px !important;
+  }
+  .bodyFlexOne .homeTextOne {
+    width: 90% !important;
+    padding-top: 20px !important;
+  }
+  .bodyFlexTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0% !important;
+  }
+  .bodyFlexTwo .homeTextOne {
+    padding: 20px 0% !important;
+  }
+  .bodyFlexTwo .menuFlex {
+    width: 90% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px !important;
+  }
+  .bodyFlexTwo .menuFlex .iconContainer {
+    text-align: center;
+  }
+  .bodyFlexTwo .menuFlex i {
+    font-size: 2em !important;
+  }
+  .about {
+    padding-top: 100px !important;
+  }
+  .about .imageContainer {
+    width: 70% !important;
+  }
+  .about .aboutUs {
+    width: 70% !important;
+  }
+  .homeGallery ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeGallery ul li {
+    width: 50% !important;
+  }
+  .testimonals p {
+    font-size: 1rem !important;
+  }
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutMe .imageContainer {
+    width: 20%;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .bodyFlex .imageContainer {
+    width: 90% !important;
+  }
+  .bodyFlex li {
+    width: 50% !important;
+  }
+  .bodyFlex i {
+    margin: 0px !important;
+  }
+  .bio {
+    padding: 5px !important;
+    height: auto !important;
+  }
+  .cardContainer ul {
+    padding-bottom: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardContainer ul p {
+    margin-bottom: 40px !important;
+  }
+  .commentGrow {
+    height: auto !important;
+  }
+  .userInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 620px) {
+  .iconContainer {
+    width: 20%;
+    text-align: left !important;
+  }
+  .aboutMe .imageContainer {
+    width: 30% !important;
+  }
+  footer section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer section .ourAddress,
+footer section .subNow,
+footer section .recentPosts {
+    width: 100%;
+  }
+  footer section .ourAddress ul,
+footer section .subNow ul,
+footer section .recentPosts ul {
+    padding-top: 10px;
+  }
+  footer section .ourAddress ul li,
+footer section .subNow ul li,
+footer section .recentPosts ul li {
+    padding-top: 10px !important;
+    padding-bottom: 5px;
+  }
+  footer section .ourAddress .lastList,
+footer section .subNow .lastList,
+footer section .recentPosts .lastList {
+    padding-bottom: 40px;
+  }
+  footer section .ourAddress p,
+footer section .subNow p,
+footer section .recentPosts p {
+    padding: 10px 0;
+  }
+}
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

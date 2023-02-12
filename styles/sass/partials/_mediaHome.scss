@@ -1,0 +1,266 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+
+@media (max-width: 1500px) {
+    header {
+        .menuFlex {
+            width: 60%;
+        }
+    }
+
+    .menuFlex {
+        padding: 0 3% !important;
+        gap: 0 !important;
+
+        li {
+            padding-bottom: 2% !important;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1250px) {
+
+    .homeTextOne {
+        padding: 0% !important;
+
+        h2 {
+            font-size: 1rem !important;
+        }
+
+        p {
+            font-size: 0.5rem !important;
+            margin: 20px 10% !important;
+        }
+    }
+
+    .menuFlex {
+        .fa-bars {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1rem !important;
+        }
+
+        p {
+            font-size: 0.5rem !important;
+            line-height: 20px !important;
+        }
+
+        li {
+            padding-bottom: 2% !important;
+        }
+    }
+
+    .bio {
+        padding: 10px 2%;
+        margin: 0;
+        p {
+            font-size: 0.5rem;
+            line-height: 20px;
+        }
+    }
+
+    footer {
+        .recentPosts{
+            li {
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        .menuFlex {
+            display:none;
+        }
+    
+
+        .hamMenu {
+            position: absolute;
+            top: 3%;
+            right: 5%; 
+            display: inline;
+          }
+
+    }
+
+    .bodyFlexOne {
+        flex-direction: column-reverse;
+        padding-bottom: 20px !important;
+
+        .homeTextOne {
+            width: 90% !important;
+            padding-top: 20px !important; 
+        }
+    }
+
+    .bodyFlexTwo {
+        flex-direction: column;
+        padding:  0% !important;
+
+        .homeTextOne {
+            padding: 20px 0% !important;
+        }
+
+        .menuFlex {
+            width: 90% !important;
+            justify-content: center;
+            padding-top: 20px !important;;
+
+            .iconContainer {
+                text-align: center;
+            }
+
+            i {
+                font-size: 2em !important;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 100px !important;
+
+        .imageContainer {
+            width: 70% !important;
+        }
+
+        .aboutUs {
+            width: 70% !important;
+        }
+    }
+
+    .homeGallery {
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 50% !important;
+            }
+        }
+    }
+
+    .testimonals {
+        p {
+            font-size: 1rem !important;
+        }
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+
+        .imageContainer {
+            width: 20%;
+
+            padding-bottom: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .bodyFlex{
+    .imageContainer {
+        width: 90% !important;
+    }
+
+        li {
+            width: 50% !important;
+        }
+
+        i {
+            margin: 0px !important;
+        }
+    }
+
+    .bio {
+        padding: 5px !important;
+        height: auto !important;
+    }
+
+    .cardContainer {
+        ul {
+
+            padding-bottom: 0 !important;
+
+            flex-direction: column;
+
+            p {
+                margin-bottom: 40px !important;
+            }
+        }
+    }
+
+    .commentGrow {
+        height: auto !important;
+    }
+
+    .userInfo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 620px) {
+    .iconContainer {
+        width: 20%;
+
+        text-align: left !important;
+    }
+
+    .aboutMe {
+        .imageContainer {
+            width: 30% !important;
+    }
+    }
+
+    footer {
+        section {
+            flex-direction: column;
+
+            .ourAddress,
+            .subNow,
+            .recentPosts
+            {
+               width: 100%;
+
+                ul {
+                    padding-top: 10px;
+                }
+
+               ul li {
+                padding-top: 10px !important;
+                padding-bottom: 5px;
+               }
+               
+               .lastList {
+                padding-bottom: 40px;
+               }
+
+               p {
+                padding: 10px 0;
+               }
+            }
+        }
+    }
+}
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
