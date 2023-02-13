@@ -11,10 +11,8 @@ footer {
     p,
     li,
     a {
-
         color: $primaryBrownGrey;
     }
-
 
     section {
         display: flex;
@@ -31,8 +29,6 @@ footer {
             }
         }
 
-        
-
         .ourAddress{
             li{
                 width: 90%;
@@ -43,8 +39,6 @@ footer {
             .footerNote {
                 padding-top: 33px;
             }
-
-           
         }
 
         .recentPosts {
@@ -114,7 +108,5 @@ footer {
                 margin: 0;
             }
         }
-
     }
-
 }

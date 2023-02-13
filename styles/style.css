@@ -390,7 +390,7 @@ header a {
   font-size: 0.7rem;
   font-weight: 700;
 }
-header .hamMenu {
+header .menuWrap {
   display: none;
 }
 
@@ -412,6 +412,11 @@ img {
 a {
   text-decoration: none;
   color: #F6F6F6;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.7;
 }
 
 ul {
@@ -1079,7 +1084,7 @@ textarea {
     font-size: 1rem !important;
   }
   .homeTextOne p {
-    font-size: 0.5rem !important;
+    font-size: 0.6rem !important;
     margin: 20px 10% !important;
   }
   .menuFlex .fa-bars {
@@ -1107,14 +1112,12 @@ textarea {
     width: 90% !important;
   }
 }
+/* Portrait tablet and small desktops */
 @media (max-width: 1000px) {
   header .menuFlex {
     display: none;
   }
-  header .hamMenu {
-    position: absolute;
-    top: 3%;
-    right: 5%;
+  header .menuWrap {
     display: inline;
   }
   .bodyFlexOne {
@@ -1123,6 +1126,9 @@ textarea {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding-bottom: 20px !important;
+  }
+  .bodyFlexOne .imageContainer {
+    width: 70%;
   }
   .bodyFlexOne .homeTextOne {
     width: 90% !important;
@@ -1134,6 +1140,9 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0% !important;
+  }
+  .bodyFlexTwo .imageContainer {
+    width: 70%;
   }
   .bodyFlexTwo .homeTextOne {
     padding: 20px 0% !important;
@@ -1168,7 +1177,7 @@ textarea {
     width: 50% !important;
   }
   .testimonals p {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
   }
   .aboutMe {
     -webkit-box-orient: vertical;
@@ -1183,7 +1192,30 @@ textarea {
     width: 20%;
     padding-bottom: 20px;
   }
+  .mainContactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContactUs .emailUs,
+.mainContactUs .contactDetails {
+    width: 100%;
+    padding: 0 10%;
+  }
+  .mainContactUs .emailUs h2,
+.mainContactUs .contactDetails h2 {
+    padding-top: 50px;
+  }
+  .mainContactUs .contactDetails div {
+    width: 100%;
+  }
+  .mainContactUs .contactDetails div h2,
+.mainContactUs .contactDetails div h3 {
+    padding-top: 50px;
+  }
 }
+/* Landscape phone to portrait tablet */
 @media (max-width: 800px) {
   .bodyFlex .imageContainer {
     width: 90% !important;
@@ -1218,6 +1250,7 @@ textarea {
             flex-direction: column;
   }
 }
+/* Landscape phones and down */
 @media (max-width: 620px) {
   .iconContainer {
     width: 20%;
@@ -1258,7 +1291,181 @@ footer section .subNow p,
 footer section .recentPosts p {
     padding: 10px 0;
   }
+  footer .copyright {
+    font-size: 0.6rem !important;
+  }
 }
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+.menuWrap {
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.menuWrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menuWrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Hamburger Line */
+.menuWrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* Top and Bottom lines */
+.menuWrap .hamburger > div:before,
+.menuWrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* moves line down */
+.menuWrap .hamburger > div:after {
+  top: 10px;
+}
+
+/* Toggler animate */
+.menuWrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menuWrap .toggler:checked + .hamburger > div:before,
+.menuWrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* rotate on hover when checked */
+.menuWrap .toggler:checked:hover + .hamburger > div {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+/* Show menu */
+.menWrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menuWrap .toggler:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+
+.menuWrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* visibility: hidden; */
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuWrap .menu > div {
+  background: rgba(24, 39, 51, 0.85);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menuWrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  -webkit-transition: opacity 0.4 ease;
+  transition: opacity 0.4 ease;
+}
+
+.menuWrap .menu > div > div > ul > li {
+  list-style: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.menuWrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}

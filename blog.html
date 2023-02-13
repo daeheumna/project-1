@@ -37,12 +37,27 @@
                     </ul>
             </nav>
 
-            <div class="hamMenu">
-                <!-- "Hamburger menu"-->
-                <a href="#">
-                  <i class="fa fa-bars fa-3x"></i>
-                </a>
-              </div>
+            <div class="menuWrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a class="green" href="./index.html">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#recipes">RECEIPES</a></li>
+                                <li><a href="">NUTRITION</a></li>
+                                <li><a href="./blog.html">BLOG</a></li>
+                                <li><a href="">SHOP</a></li>
+                                <li><a href="./contact.html">CONTACT</a></li>
+                                <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="mainBlog">
@@ -94,17 +109,17 @@
                     <ul>
                         <li>
                             <img src="./assets/blog-3.jpeg" alt="woman holding pink cake">
-                            <h3><a>HOW TO BAKE THE PERFECT CAKE</a></h3>
+                            <h3><a href="#">HOW TO BAKE THE PERFECT CAKE</a></h3>
                             <p>July 11, 2018 | by Admin | in Recipes</p>
                         </li>
                         <li>
                             <img src="./assets/blog-4.jpeg" alt="three floral cupcakes">
-                            <h3><a>FLORAL CUPCAKES</a></h3>
+                            <h3><a href="#">FLORAL CUPCAKES</a></h3>
                             <p>July 19, 2018 | by Admin | in Recipes</p>
                         </li>
                         <li>
                             <img src="./assets/blog-5.jpeg" alt="person garnishing salad on smoked salmon">
-                            <h3><a>SINGLE POST WITH IMAGE</a></h3>
+                            <h3><a href="#">SINGLE POST WITH IMAGE</a></h3>
                             <P>July 22, 2018 | by Admin | in Recipes</P>
                         </li>
                     </ul>
@@ -178,7 +193,7 @@
                         <textarea name="comments" id="comments" placeholder="Comments" cols="250" rows="10" minlength="5" maxlength="200"></textarea>
                     </fieldset>
 
-                        <button type="submit"> Submit Comment</button>
+                        <button type="submit"><a href="#">Submit Comment </a></button>
                 </form>
             </section>
         </div>

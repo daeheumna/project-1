@@ -34,8 +34,6 @@
             }
         }
 
-     
-
         p {
             margin-top: 20px;
             color: $primaryBrownGrey;
@@ -49,7 +47,6 @@
             font-size: 0.7rem;
             margin-top: 20px;
         }
-
     }
 }
 
@@ -69,16 +66,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-        // .menuOne,
-        // .menuTwo,
-        // .menuThree,
-        // .menuFour,
-        // .menuFive,
-        // .menuSix {
-
-        // }
-        
 
         a {
             color: $primaryBlack;
@@ -105,7 +92,6 @@
             .fa-spoon {
                 padding-left: 20%;
             }
-
         }
     }
 
@@ -154,7 +140,6 @@
         p {
             color: $primaryBrownGrey;
         }
-
     }
 
 }
@@ -232,5 +217,4 @@
     .fa-angle-right:hover {
         opacity: 0.5;
     }
-
 }

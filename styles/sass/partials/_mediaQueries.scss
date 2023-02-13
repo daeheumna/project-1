@@ -17,7 +17,6 @@
             padding-bottom: 2% !important;
         }
     }
-
 }
 
 
@@ -32,7 +31,7 @@
         }
 
         p {
-            font-size: 0.5rem !important;
+            font-size: 0.6rem !important;
             margin: 20px 10% !important;
         }
     }
@@ -74,6 +73,7 @@
     }
 }
 
+/* Portrait tablet and small desktops */
 @media (max-width: 1000px) {
     header {
         .menuFlex {
@@ -81,10 +81,7 @@
         }
     
 
-        .hamMenu {
-            position: absolute;
-            top: 3%;
-            right: 5%; 
+        .menuWrap {
             display: inline;
           }
 
@@ -93,6 +90,10 @@
     .bodyFlexOne {
         flex-direction: column-reverse;
         padding-bottom: 20px !important;
+
+        .imageContainer {
+            width: 70%;
+        }
 
         .homeTextOne {
             width: 90% !important;
@@ -103,6 +104,10 @@
     .bodyFlexTwo {
         flex-direction: column;
         padding:  0% !important;
+
+        .imageContainer {
+            width: 70%;
+        }
 
         .homeTextOne {
             padding: 20px 0% !important;
@@ -147,7 +152,7 @@
 
     .testimonals {
         p {
-            font-size: 1rem !important;
+            font-size: 0.8rem !important;
         }
     }
 
@@ -160,10 +165,35 @@
 
             padding-bottom: 20px;
         }
+    }
 
+    .mainContactUs {
+        flex-direction: column;
+
+        .emailUs,
+        .contactDetails {
+            width: 100%;
+            padding: 0 10%;
+
+            h2 {
+                padding-top: 50px;
+            }
+        }
+
+        .contactDetails {
+            div {
+                width: 100%;
+
+                h2,
+                h3 {
+                    padding-top: 50px;
+                }
+            }
+        }
     }
 }
 
+/* Landscape phone to portrait tablet */
 @media (max-width: 800px) {
 
     .bodyFlex{
@@ -207,6 +237,7 @@
     }
 }
 
+/* Landscape phones and down */
 @media (max-width: 620px) {
     .iconContainer {
         width: 20%;
@@ -248,19 +279,9 @@
                }
             }
         }
+
+        .copyright {
+            font-size: 0.6rem !important;
     }
-}
-
-
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
+    }
 }
