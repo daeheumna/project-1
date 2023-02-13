@@ -179,12 +179,21 @@
         align-items: center;
 
         .imageContainer {
-            width: 18%;
+            width: 100px;
+            height: 150px;
+        }
 
-            padding-bottom: 20px;
+        .bio {
+            margin: 20px 0 0 0;
+            text-align: center;
         }
     }
 
+    .commentGrow {
+        height: auto !important;
+    }
+
+    // Contact Us
     .mainContactUs {
         flex-direction: column;
 
@@ -253,10 +262,6 @@
         }
     }
 
-    .commentGrow {
-        height: auto !important;
-    }
-
     .userInfo {
         flex-direction: column;
     }
@@ -277,15 +282,6 @@
         width: 20%;
         text-align: left !important;
     }
-
-
-    // BLOG
-    .aboutMe {
-        .imageContainer {
-            width: 30% !important;
-    }
-    }
-
 
     // FOOTER
     footer {

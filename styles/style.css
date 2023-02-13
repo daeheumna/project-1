@@ -1021,6 +1021,7 @@ textarea {
   border: none;
 }
 .mainContactUs .emailUs button a {
+  font-weight: 700;
   color: #64A604;
 }
 .mainContactUs .emailUs .fa-long-arrow-right {
@@ -1190,8 +1191,15 @@ textarea {
             align-items: center;
   }
   .aboutMe .imageContainer {
-    width: 18%;
-    padding-bottom: 20px;
+    width: 100px;
+    height: 150px;
+  }
+  .aboutMe .bio {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .commentGrow {
+    height: auto !important;
   }
   .mainContactUs {
     -webkit-box-orient: vertical;
@@ -1241,9 +1249,6 @@ textarea {
   .cardContainer ul p {
     margin-bottom: 40px !important;
   }
-  .commentGrow {
-    height: auto !important;
-  }
   .userInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1259,9 +1264,6 @@ textarea {
   .iconContainer {
     width: 20%;
     text-align: left !important;
-  }
-  .aboutMe .imageContainer {
-    width: 30% !important;
   }
   footer section {
     -webkit-box-orient: vertical;
