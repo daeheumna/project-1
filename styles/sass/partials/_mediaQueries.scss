@@ -3,14 +3,16 @@
 
 
 @media (max-width: 1500px) {
+
+    // HEADER
     header {
         .menuFlex {
-            width: 60%;
+            width: 50%;
         }
     }
 
+    // HOME
     .menuFlex {
-        padding: 0 3% !important;
         gap: 0 !important;
 
         li {
@@ -23,6 +25,7 @@
 
 @media (max-width: 1250px) {
 
+    // HOME
     .homeTextOne {
         padding: 0% !important;
 
@@ -35,6 +38,7 @@
             margin: 20px 10% !important;
         }
     }
+
 
     .menuFlex {
         .fa-bars {
@@ -55,6 +59,7 @@
         }
     }
 
+    // Blog
     .bio {
         padding: 10px 2%;
         margin: 0;
@@ -73,8 +78,13 @@
     }
 }
 
+// ==============================================
 /* Portrait tablet and small desktops */
+// ==============================================
+
 @media (max-width: 1000px) {
+
+    // HEADER
     header {
         .menuFlex {
             display:none;
@@ -87,12 +97,14 @@
 
     }
 
+
+    // HOME
     .bodyFlexOne {
         flex-direction: column-reverse;
         padding-bottom: 20px !important;
 
         .imageContainer {
-            width: 70%;
+            width: 60%;
         }
 
         .homeTextOne {
@@ -106,7 +118,7 @@
         padding:  0% !important;
 
         .imageContainer {
-            width: 70%;
+            width: 60%;
         }
 
         .homeTextOne {
@@ -156,12 +168,14 @@
         }
     }
 
+
+    // BLOG
     .aboutMe {
         flex-direction: column;
         align-items: center;
 
         .imageContainer {
-            width: 20%;
+            width: 18%;
 
             padding-bottom: 20px;
         }
@@ -193,9 +207,13 @@
     }
 }
 
+// ==============================================
 /* Landscape phone to portrait tablet */
+// ==============================================
 @media (max-width: 800px) {
 
+
+    // HOME
     .bodyFlex{
     .imageContainer {
         width: 90% !important;
@@ -210,6 +228,8 @@
         }
     }
 
+
+    // BLOG
     .bio {
         padding: 5px !important;
         height: auto !important;
@@ -237,20 +257,31 @@
     }
 }
 
+// ==============================================
 /* Landscape phones and down */
+// ==============================================
 @media (max-width: 620px) {
+
+    // HOME
+    .menuFlex {
+        padding: 0 !important;
+    }
+
     .iconContainer {
         width: 20%;
-
         text-align: left !important;
     }
 
+
+    // BLOG
     .aboutMe {
         .imageContainer {
             width: 30% !important;
     }
     }
 
+
+    // FOOTER
     footer {
         section {
             flex-direction: column;

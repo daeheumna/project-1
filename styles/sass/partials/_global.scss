@@ -1,7 +1,7 @@
 @use "variables" as *;
 @use "./mixins" as *;
 
-/* Global Styles */
+// Global Styles
 html {
     font-size: 125%;
 }
@@ -53,16 +53,10 @@ fieldset{
     margin: 0;
 }
 
-.fa-facebook,
-.fa-instagram,
-.fa-twitter {
-    color: #FFF;
-
-}
-
 button:hover,
 button:focus {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .nextLine {
@@ -83,7 +77,7 @@ textarea {
 }
 
 
-/* TYPOGRAPHY Styles */
+// TYPOGRAPHY Styles 
 h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
     padding: 0;
@@ -110,4 +104,12 @@ button {
 input,
 textarea {
     color: $primaryBrownGrey;
+}
+
+
+// Socials
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+    color: #FFF;
 }
