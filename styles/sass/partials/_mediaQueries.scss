@@ -22,7 +22,6 @@
 }
 
 
-
 @media (max-width: 1250px) {
 
     // HOME
@@ -50,7 +49,7 @@
         }
 
         p {
-            font-size: 0.5rem !important;
+            font-size: 0.55rem !important;
             line-height: 20px !important;
         }
 
@@ -64,7 +63,7 @@
         padding: 10px 2%;
         margin: 0;
         p {
-            font-size: 0.5rem;
+            font-size: 0.65rem;
             line-height: 20px;
         }
     }
@@ -207,6 +206,7 @@
     }
 }
 
+
 // ==============================================
 /* Landscape phone to portrait tablet */
 // ==============================================
@@ -256,6 +256,7 @@
         flex-direction: column;
     }
 }
+
 
 // ==============================================
 /* Landscape phones and down */

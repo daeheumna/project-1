@@ -1093,7 +1093,7 @@ textarea {
     font-size: 1rem !important;
   }
   .menuFlex p {
-    font-size: 0.5rem !important;
+    font-size: 0.55rem !important;
     line-height: 20px !important;
   }
   .menuFlex li {
@@ -1104,7 +1104,7 @@ textarea {
     margin: 0;
   }
   .bio p {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
     line-height: 20px;
   }
   footer .recentPosts li {
