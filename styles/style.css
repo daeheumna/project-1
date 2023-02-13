@@ -1086,6 +1086,9 @@ textarea {
     font-size: 0.6rem !important;
     margin: 20px 10% !important;
   }
+  .menuFlex {
+    padding: 0 !important;
+  }
   .menuFlex .fa-bars {
     font-size: 2em;
   }
