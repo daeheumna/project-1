@@ -19,6 +19,15 @@
             padding-bottom: 2% !important;
         }
     }
+    
+}
+
+@media (max-width: 1415px) {
+    .meals {
+        .menuFlex {
+            padding: 0% !important;
+        }
+    }
 }
 
 
@@ -40,12 +49,6 @@
 
 
     .menuFlex {
-        padding: 0 !important;
-
-        .fa-bars {
-            font-size: 2em;
-        }
-
         h3 {
             font-size: 1rem !important;
         }
