@@ -1208,19 +1208,19 @@ textarea {
             flex-direction: column;
   }
   .mainContactUs .emailUs,
-.mainContactUs .contactDetails {
+  .mainContactUs .contactDetails {
     width: 100%;
     padding: 0 10%;
   }
   .mainContactUs .emailUs h2,
-.mainContactUs .contactDetails h2 {
+  .mainContactUs .contactDetails h2 {
     padding-top: 50px;
   }
   .mainContactUs .contactDetails div {
     width: 100%;
   }
   .mainContactUs .contactDetails div h2,
-.mainContactUs .contactDetails div h3 {
+  .mainContactUs .contactDetails div h3 {
     padding-top: 50px;
   }
 }
@@ -1272,33 +1272,49 @@ textarea {
             flex-direction: column;
   }
   footer section .ourAddress,
-footer section .subNow,
-footer section .recentPosts {
+  footer section .subNow,
+  footer section .recentPosts {
     width: 100%;
   }
   footer section .ourAddress ul,
-footer section .subNow ul,
-footer section .recentPosts ul {
+  footer section .subNow ul,
+  footer section .recentPosts ul {
     padding-top: 10px;
   }
   footer section .ourAddress ul li,
-footer section .subNow ul li,
-footer section .recentPosts ul li {
+  footer section .subNow ul li,
+  footer section .recentPosts ul li {
     padding-top: 10px !important;
     padding-bottom: 5px;
   }
   footer section .ourAddress .lastList,
-footer section .subNow .lastList,
-footer section .recentPosts .lastList {
+  footer section .subNow .lastList,
+  footer section .recentPosts .lastList {
     padding-bottom: 40px;
   }
   footer section .ourAddress p,
-footer section .subNow p,
-footer section .recentPosts p {
+  footer section .subNow p,
+  footer section .recentPosts p {
     padding: 10px 0;
   }
   footer .copyright {
     font-size: 0.6rem !important;
+  }
+}
+@media (max-width: 360px) {
+  .bodyFlexTwo .menuFlex {
+    width: 95% !important;
+  }
+}
+@media (max-width: 340px) {
+  .bodyFlexTwo .menuFlex {
+    text-align: center;
+  }
+  .bodyFlexTwo .menuFlex div {
+    width: 95%;
+  }
+  .bodyFlexTwo .menuFlex .iconContainer {
+    display: none;
   }
 }
 .menuWrap .toggler {

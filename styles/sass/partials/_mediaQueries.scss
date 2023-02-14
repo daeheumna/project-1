@@ -318,3 +318,27 @@
     }
     }
 }
+
+@media (max-width: 360px) {
+    .bodyFlexTwo {
+        .menuFlex {
+            width: 95% !important;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .bodyFlexTwo {
+        .menuFlex {
+            text-align: center;
+
+            div {
+                width: 95%;
+            }
+
+            .iconContainer {
+                display: none;
+            }
+        }
+    }
+}
