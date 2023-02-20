@@ -74,7 +74,25 @@
                     </div>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem ipsum quo, adipisci ipsam iusto sed ea, assumenda eaque, voluptates ducimus minima. Rerum, tenetur ut illum deleniti maiores ipsum exercitationem quae obcaecati id hic corrupti maxime modi cum distinctio assumenda?</p>
-                    <button><a href="#">View Recipes </a></button>
+                    <!-- <button><a href="#" id="popularRecipes">View Recipes </a></button> -->
+
+                    <div class="container">
+                        <a data-modal="modal-one">View Recipes</a>
+                      </div>
+
+                    <div class="modal" id="modal-one">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-container">
+                            <h2>Recipes</h2>   
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                            </ul>
+                          <button class="modal-close modal-exit">X</button>
+                        </div>
+                      </div>
                     
                 </div>
 
@@ -277,5 +295,6 @@
         </div>
     </div>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>
