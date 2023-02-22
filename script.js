@@ -1,3 +1,4 @@
+// Pop-up Modal
 const modals = document.querySelectorAll('[data-modal]');
 
 modals.forEach(function (trigger) {
@@ -14,3 +15,54 @@ modals.forEach(function (trigger) {
     });
   });
 });
+
+// Blog Comment Section
+// Variables
+const formElement = document.querySelector('form');
+const userName = document.querySelector('#userName');
+const userEmail = document.querySelector('#email');
+const userWeb = document.querySelector('#website');
+const userComment = document.querySelector('#comments');
+const userPost = document.querySelector('#userComments');
+
+formElement.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    const posterName = userName.value.trim();
+    const posterEmail = userEmail.value.trim();
+    const posterWeb = userWeb.value.trim();
+    const posterComment = userComment.value.trim();
+    
+    if (posterName && posterEmail){
+
+        // get today's Date
+        let today = new Date();
+        today = today.toString();
+        // console.log(today);
+
+        // Cut the day
+        let day = today.slice(8, 10);
+        // Cut the Month
+        let month = today.slice(4, 7);
+        // Cut the year
+        let year = today.slice(11, 15);
+        // Cut the hour
+        let hour = today.slice(16, 24);
+
+        const postedComment = document.createElement('div');
+
+        postedComment.innerHTML = `<div class=userCommentBox><h4>${posterName} - ${posterWeb}</h4>
+        <p>${posterEmail}</p>
+        <p>${posterComment}</p>
+        <p class="postDate">${month} ${day}, ${year} at ${hour}</p>
+        </ul>`;
+
+        userPost.appendChild(postedComment);
+
+        userName.value = '';
+        userEmail.value = '';
+        userWeb.value = '';
+        userComment.value ='';
+
+    }
+})
