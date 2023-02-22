@@ -1,4 +1,5 @@
-// Pop-up Modal
+// Pop-up Modal for Popular Recipes on Home Page.
+// Thank you to code pen for the code along.
 const modals = document.querySelectorAll('[data-modal]');
 
 modals.forEach(function (trigger) {
